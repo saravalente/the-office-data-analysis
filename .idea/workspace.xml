@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="27c7ba29-c4ca-4b6e-9a97-a16ff915b7b0" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1gPw2iDFEHWOlZVKEkkkLe5oUDR" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js" />
+      <recent name="$PROJECT_DIR$/css" />
+      <recent name="$PROJECT_DIR$/data" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="27c7ba29-c4ca-4b6e-9a97-a16ff915b7b0" name="Default Changelist" comment="" />
+      <created>1598029331535</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598029331535</updated>
+      <workItem from="1598029333410" duration="9980000" />
+      <workItem from="1598283911747" duration="17495000" />
+      <workItem from="1598458087882" duration="9820000" />
+      <workItem from="1598544833691" duration="3647000" />
+      <workItem from="1598915828040" duration="379000" />
+      <workItem from="1598916373393" duration="118000" />
+      <workItem from="1598916701831" duration="226000" />
+      <workItem from="1598919216416" duration="320000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="120" y="6" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598109276210">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="120" y="6" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.800@0.0.1280.800" timestamp="1598109276210" />
+    <state x="120" y="29" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.777@0.23.1280.777" timestamp="1598031995735" />
+    <state x="196" y="191" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598033778264">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="196" y="191" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1280.777@0.23.1280.777" timestamp="1598033778264" />
+    <state x="283" y="23" key="SettingsEditor" timestamp="1598915960548">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="283" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1598915960548" />
+    <state x="104" y="23" width="961" height="777" key="dock-window-1" timestamp="1598111784692">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="104" y="23" width="961" height="777" key="dock-window-1/0.23.1280.777@0.23.1280.777" timestamp="1598111784692" />
+    <state x="468" y="163" width="598" height="548" key="find.popup" timestamp="1598545248794">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="468" y="163" width="598" height="548" key="find.popup/0.23.1280.777@0.23.1280.777" timestamp="1598545248794" />
+    <state x="543" y="23" width="670" height="676" key="search.everywhere.popup" timestamp="1598545943538">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="543" y="23" width="670" height="676" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1598545943538" />
+  </component>
+</project>

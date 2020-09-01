@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<title>data analysis</title>
+</head>
+<body>
+    <div class="container wrapper">
+        <h4>the office: rating by episode</h4>
+        <div class="row">
+            <label for="season-filter">Season:</label>
+            <select class="form-control" id="season-filter" onchange="seasonChanged()">
+                <option value="all">All</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+        </div>
+        <div class="row">
+            <div id="line-chart"></div>
+        </div>
+        <div class="row">
+            <div id="p-chart"></div>
+        </div>
+    </div>
+<!--OS JS-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/d3.min.js"></script>
+    <script src="js/d3-tip.js"></script>
+    <script src="js/d3-interpolate-path.js"></script>
+<!--My JS-->
+    <script src="js/main.js"></script>
+    <script src="js/linechart.js"></script>
+    <script src="js/percentchart.js"></script>
+</body>
+</html>
