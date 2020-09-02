@@ -27,4 +27,22 @@
 .wrapper {
     text-align: center;
     padding-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.chart {
+    margin: 0 auto;
+}
+
+.wrapper p {
+    text-align: left;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+.analysis {
+    font-size: small;
 }

@@ -12,7 +12,7 @@ LineChart = function(_parentElement, _data){
     this.displayData = this.data;
 
     // DEBUG RAW DATA
-    console.log(this.data);
+    // console.log(this.data);
 
     this.initVis();
 
@@ -26,7 +26,7 @@ LineChart.prototype.initVis = function(){
     var vis = this; // read about the this
 
     vis.margin = {top: 40, right: 50, bottom: 60, left: 50};
-    vis.innerwidth = 1200 - vis.margin.left - vis.margin.right;
+    vis.innerwidth = 900 - vis.margin.left - vis.margin.right;
     vis.innerheight = 350 - vis.margin.top - vis.margin.bottom;
 
     vis.width = vis.innerwidth,
@@ -140,7 +140,7 @@ LineChart.prototype.wrangleData = function(){
         vis.displayData = vis.data.filter(function (d) {
             return d.season == selectedSeason;
         })
-        console.log(vis.displayData);
+        // console.log(vis.displayData);
     }
     // Update the visualization
     vis.updateVis();
