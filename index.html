@@ -8,9 +8,20 @@
 </head>
 <body>
     <div class="container wrapper">
-        <h2>the office: rating by episode</h2>
+        <h2>the office: data analysis</h2>
         <div class = "row analysis">
             <p>text here!</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class = "col-6">
+                <h4>rating by episode</h4>
+                <div class = "row analysis">
+                    <p>the following graph shows IMDB ratings by episode. filter by season. hover over a point for more episode info.</p>
+                </div>
+            </div>
+            <div class="col-6">
+                <h4>speakers per episode</h4>
+            </div>
         </div>
         <div class="row justify-content-center">
             <div class="col-2">
@@ -29,14 +40,12 @@
                 </select>
             </div>
         </div>
-        <div class="row">
-            <div class = "chart">
+        <div class="row justify-content-center">
+            <div class = "col-6">
                 <div id="line-chart"></div>
             </div>
-        </div>
-        <div class="row">
-            <div class = "chart">
-            <div id="p-chart"></div>
+            <div class="col-6">
+                <div id="p-chart"></div>
             </div>
         </div>
     </div>

@@ -22,8 +22,8 @@ PChart = function(_parentElement, _data){
 PChart.prototype.initVis = function(){
     var vis = this; // read about the this
 
-    vis.margin = {top: 10, right: 20, bottom: 60, left: 50};
-    vis.innerwidth = 1000 - vis.margin.left - vis.margin.right;
+    vis.margin = {top: -0, right: 0, bottom: 60, left: 40};
+    vis.innerwidth = 400 - vis.margin.left - vis.margin.right;
     vis.innerheight = 2200 - vis.margin.top - vis.margin.bottom;
 
     vis.width = vis.innerwidth,

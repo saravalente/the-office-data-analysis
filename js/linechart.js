@@ -25,8 +25,8 @@ LineChart = function(_parentElement, _data){
 LineChart.prototype.initVis = function(){
     var vis = this; // read about the this
 
-    vis.margin = {top: 40, right: 50, bottom: 60, left: 50};
-    vis.innerwidth = 900 - vis.margin.left - vis.margin.right;
+    vis.margin = {top: 40, right: 20, bottom: 60, left: 50};
+    vis.innerwidth = 700 - vis.margin.left - vis.margin.right;
     vis.innerheight = 350 - vis.margin.top - vis.margin.bottom;
 
     vis.width = vis.innerwidth,
