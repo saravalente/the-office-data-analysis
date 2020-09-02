@@ -22,7 +22,7 @@ PChart = function(_parentElement, _data){
 PChart.prototype.initVis = function(){
     var vis = this; // read about the this
 
-    vis.margin = {top: 40, right: 20, bottom: 60, left: 50};
+    vis.margin = {top: 10, right: 20, bottom: 60, left: 50};
     vis.innerwidth = 1000 - vis.margin.left - vis.margin.right;
     vis.innerheight = 2200 - vis.margin.top - vis.margin.bottom;
 
@@ -33,7 +33,7 @@ PChart.prototype.initVis = function(){
         .keys(['michael', 'dwight', 'jim', 'pam', 'andy', 'angela', 'kevin', 'erin',
             'oscar', 'darryl', 'ryan', 'phyllis', 'jan', 'kelly', 'toby', 'stanley',
             'holly', 'meredith', 'nellie', 'gabe', 'robert', 'david', 'creed',
-            'karen', 'clark', 'deangelo', 'charles', 'roy', 'pete', 'jo'])
+            'karen', 'clark', 'deangelo', 'charles', 'roy', 'pete', 'jo', 'other'])
         .offset(d3.stackOffsetExpand);
 
     vis.stackedSeries = vis.stacked(vis.displayData);
@@ -46,8 +46,8 @@ PChart.prototype.initVis = function(){
         .attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")");
 
     vis.y = d3.scaleBand()
-        .domain(vis.displayData.map(function(d, i) {
-            return i;
+        .domain(vis.displayData.map(function(d){
+            return d.index;
         }))
         .range([vis.height - vis.margin.bottom, vis.margin.top])
         .padding(0.1)
@@ -106,7 +106,7 @@ PChart.prototype.updateVis = function() {
         .join("rect")
         .attr("x", d => vis.x(d[0]))
         .attr("y", function(d, i) {
-            return vis.y(i) + vis.margin.top;
+            return vis.y(i+1) + vis.margin.top;
         })
         .attr("height", vis.y.bandwidth())
         .attr("width", d => vis.x(d[1]) - vis.x(d[0]))
@@ -119,24 +119,28 @@ PChart.prototype.updateVis = function() {
 
     vis.svg.append("g")
         .attr("class", "axis")
-        .attr("transform", "translate(0," + vis.margin.top +")") 						//  .attr("transform", "translate(0," + height + ")")
-        .call(d3.axisLeft(vis.y));									//   .call(d3.axisBottom(x));
-
-    vis.svg.append("g")
-        .attr("class", "axis")
-        .attr("transform", "translate(0,"+vis.height+")")				// New line
-        .call(d3.axisBottom(vis.x).ticks(null, "s"))					//  .call(d3.axisLeft(y).ticks(null, "s"))
-        .append("text")
-        .attr("y", 2)												//     .attr("y", 2)
-        .attr("x", vis.x(vis.x.ticks().pop()) + 0.5) 						//     .attr("y", y(y.ticks().pop()) + 0.5)
-        .attr("dy", "0.32em")										//     .attr("dy", "0.32em")
-        .attr("fill", "#000")
-        .attr("font-weight", "bold")
-        .attr("text-anchor", "start")
-        .text("Percent Lines")
-        .attr("transform", "translate("+ (-vis.width) +",-10)");   	// Newline
-
-
-
-
+        .attr("transform", "translate(" + vis.margin.left +"," + vis.margin.top +")")
+        .call(d3.axisLeft(vis.y).tickFormat(function(d){
+            var cat = d3.select(this.parentNode).datum();
+            console.log(cat);
+            // d => d*100 + "%"
+        }));
+//
+//     vis.svg.append("g")
+//         .attr("class", "axis")
+//         .attr("transform", "translate(0,"+(vis.height+vis.margin.top-vis.margin.bottom) +")")
+//         .call(d3.axisBottom(vis.x).ticks(null, "s").tickFormat(d => d*100 + "%"))
+//         .append("text")
+//         .attr("y", 2)
+//         .attr("x", vis.x(vis.x.ticks().pop()) + 0.5)
+//         .attr("dy", "0.32em")
+//         .attr("fill", "#000")
+//         .attr("font-weight", "bold")
+//         .attr("text-anchor", "start")
+//         .text("Percent Lines")
+//         .attr("transform", "translate("+ (-vis.width + vis.margin.right)+"," + (vis.margin.top*2) +")");
+//
+//
+//
+//
 }

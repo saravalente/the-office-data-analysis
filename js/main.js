@@ -7,7 +7,7 @@ function loadData() {
 
     Promise.all([
         d3.csv('data/ratings-per-ep.csv', d3.autoType),
-        d3.csv('data/mainspeakerlines.csv', d3.autoType)
+        d3.csv('data/mainspeakerlines2.csv', d3.autoType)
     ])
         .then(([data1, data2]) => {
             allData = data1;
