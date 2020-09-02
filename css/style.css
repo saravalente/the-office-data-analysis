@@ -5,8 +5,9 @@
     r: 4.5;
 }
 
-.circle{
-    /*fill: #00821a;*/
+.bar:hover {
+    opacity: .6;
+    cursor: pointer;
 }
 
 .d3-tip {
